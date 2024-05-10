@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Meta tags essenciais para definição de charset e compatibilidade com dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBQ GUARINO</title>
+    <!-- Link para a folha de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Script JS deferido para quando a página carregar completamente -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>BBQ Guarino</h1>
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção de introdução -->
+        <section class="intro">
+            <h2>Bem-vindo ao BBQ Guarino!</h2>
+            <p>Descubra nossos deliciosos burgers e combos abaixo.</p>
+        </section>
+        <!-- Seção com botões de menu -->
+        <section class="menu-section">
+            <button class="menu-toggle" data-target="burgers">Lanches</button>
+            <button class="menu-toggle" data-target="skewers">Espetos</button>
+        </section>
+        <!-- Menu de burgers -->
+        <div class="menu" id="burgers">
+            <!-- Item do menu -->
+            <div class="menu-item">
+                <h3>X-Salada</h3>
+                <img src="fotos/x_salada_combo.jpg" alt="X-Salada com rúcula e queijo">
+                <p>150grs de carne, pão de brioche, rúcula, cebola, queijo e maionese.</p>
+                <p class="price">Lanche: R$22,00</p>
+                <p class="price">Combo: R$32,00</p>
+                <p>Combo inclui: 120 grs de batata frita, refrigerante de 350ml</p>
+            </div>
+            <!-- Outro item do menu -->
+            <div class="menu-item">
+                <h3>X-Bacon</h3>
+                <img src="fotos/x_bacon_combo.jpg" alt="X-Bacon com queijo">
+                <p>150grs de carne, pão de brioche, bacon, queijo e maionese.</p>
+                <p class="price">Lanche: R$23,00</p>
+                <p class="price">Combo: R$33,00</p>
+                <p>Combo inclui: 120 grs de batata frita, refrigerante de 350ml</p>
+            </div>
+            <!-- Mais um item do menu -->
+            <div class="menu-item">
+                <h3>Chimibacon</h3>
+                <img src="fotos/chimibacon_lanche.jpg" alt="Chimibacon com mussarela e bacon">
+                <p>150grs de carne, pão brioche, mussarela, bacon, chimichurri e maionese.</p>
+                <p class="price">Lanche: R$22,00</p>
+                <p class="price">Combo: R$32,00</p>
+                <p>Combo inclui: 120 grs de batata frita, refrigerante de 350ml</p>
+            </div>
+        </div>
+        <!-- Menu de espetos, inicialmente oculto -->
+        <div class="menu hidden" id="skewers">
+            <!-- Item de espeto -->
+            <div class="menu-item">
+                <h3>Carne</h3>
+                <img src="fotos/espeto_de_carne.jpg" alt="Espeto de Carne">
+                <p class="price">Preço: R$10,00</p>
+            </div>
+            <!-- Outro item de espeto -->
+            <div class="menu-item">
+                <h3>Kafta</h3>
+                <img src="fotos/espeto_de_kafta.jpg" alt="Espeto de Kafta">
+                <p class="price">Preço: R$10,00</p>
+            </div>
+        </div>
+        <!-- Seção de contato -->
+        <section class="contact">
+            <h3>Fale conosco: (55) 99999-9999</h3>
+        </section>
+    </main>
+    <!-- Rodapé da página -->
+    <footer>
+        © 2024 - BBQ Guarino | Todos os direitos reservados.
+    </footer>
+</body>
+</html>

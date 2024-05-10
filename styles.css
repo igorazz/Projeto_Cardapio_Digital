@@ -1,0 +1,135 @@
+/* Estilos Básicos */
+/* Configurações globais do corpo do documento, incluindo fonte, cor de fundo e cor do texto */
+body {
+  font-family: "Roboto", sans-serif; /* Define a fonte para Roboto, disponível do Google Fonts */
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  background-color: #1a1a1a; /* Define a cor de fundo escura */
+  color: #fff; /* Define a cor do texto como branco para contraste */
+}
+
+/* Estilização do cabeçalho */
+header {
+  background: linear-gradient(to right, #d10000, #900); /* Gradiente vermelho para o fundo */
+  color: white; /* Cor do texto do cabeçalho */
+  padding: 20px 10px; /* Preenchimento em torno do texto do cabeçalho */
+  text-align: center; /* Centraliza o texto do cabeçalho */
+}
+
+/* Configurações principais para a tag <main> */
+main {
+  padding: 20px; /* Preenchimento em torno do conteúdo dentro da tag <main> */
+}
+
+/* Estilização da seção introdutória */
+.intro {
+  text-align: center; /* Centraliza o texto da introdução */
+  margin-bottom: 40px; /* Espaço abaixo da seção introdutória */
+}
+
+/* Botões de Menu */
+.menu-section {
+  display: flex; /* Usa flexbox para alinhar os botões horizontalmente */
+  overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+  white-space: nowrap; /* Previne a quebra de linha dos botões */
+  justify-content: center; /* Centraliza os botões na seção */
+  margin-bottom: 20px; /* Espaço abaixo da seção dos botões */
+}
+
+.menu-toggle {
+  background-color: #d10000; /* Cor de fundo vermelha para os botões */
+  color: white; /* Cor do texto */
+  border: none; /* Sem borda */
+  padding: 12px 24px; /* Preenchimento interno nos botões */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar clicabilidade */
+  border-radius: 25px; /* Bordas arredondadas */
+  margin: 10px; /* Margem em torno dos botões */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo ao passar o mouse */
+}
+
+.menu-toggle:hover {
+  background-color: #b30000; /* Cor de fundo ao passar o mouse (um vermelho mais escuro) */
+}
+
+/* Estilização dos Menus */
+.menu {
+  display: none; /* Inicialmente oculto */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Layout de grade responsivo */
+  gap: 20px; /* Espaço entre os itens da grade */
+  justify-content: center; /* Centraliza os itens no container da grade */
+  padding: 20px; /* Preenchimento dentro do container da grade */
+  transition: opacity 0.5s ease-out; /* Efeito de transição para a opacidade */
+}
+
+.menu-item {
+  background-color: #fff; /* Cor de fundo clara para itens do menu */
+  color: #000; /* Cor do texto escuro para contraste */
+  margin-bottom: 20px; /* Margem abaixo de cada item do menu */
+  padding: 20px; /* Preenchimento em torno de cada item do menu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra para destaque */
+  border-radius: 8px; /* Bordas arredondadas */
+  width: 100%; /* Largura total dentro de seu container */
+  max-width: 500px; /* Largura máxima para manter os itens legíveis */
+  text-align: center; /* Centraliza o texto dentro dos itens */
+}
+
+.menu-item img {
+  width: 100%; /* A imagem ocupa toda a largura do item */
+  height: auto; /* Altura automática para manter a proporção */
+  border-radius: 8px; /* Bordas arredondadas na imagem */
+  margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+.price {
+  font-weight: bold; /* Texto em negrito para o preço */
+  color: #900; /* Cor vermelha escura para destaque */
+  font-size: 1.2em; /* Tamanho aumentado para importância */
+}
+
+/* Rodapé */
+footer {
+  text-align: center; /* Centraliza o texto do rodapé */
+  padding: 10px; /* Preenchimento em torno do texto */
+  background-color: #202020; /* Cor de fundo escura para o rodapé */
+  color: #fff; /* Cor do texto branco para contraste */
+}
+
+/* Media Queries para Responsividade */
+@media only screen and (max-width: 768px) {
+  .menu-section {
+      flex-direction: center; /* Alinha os botões verticalmente */
+      align-items: center; /* Centraliza os botões */
+  }
+
+  .menu-item {
+      width: 90%; /* Ajusta a largura para melhor visualização em dispositivos menores */
+  }
+
+  .menu {
+      flex-direction: column; /* Empilha os itens do menu verticalmente */
+  }
+
+  .menu-toggle {
+      width: 80%; /* Aumenta a largura dos botões para facilitar o toque */
+      margin: 10px 0; /* Ajusta as margens para empilhamento vertical */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+      font-size: 75%; /* Diminui o tamanho da fonte para melhor legibilidade em telas pequenas */
+  }
+
+  body, header, main {
+      padding: 10px; /* Reduz o preenchimento para maximizar o espaço disponível */
+  }
+
+  h1, h2, h3 {
+      font-size: 1.5em; /* Ajusta o tamanho da fonte para cabeçalhos em telas pequenas */
+  }
+
+  .menu-item img {
+      max-width: 100%; /* Garante que as imagens não sejam maiores que seus contêineres */
+  }
+}
