@@ -1,12 +1,16 @@
 body {
-    background-color: #1a1a1a; /* Fundo preto */
+    background-image: url(fotos/wallpaper.jpg);
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
     color: #fefefe; /* Cor de texto branco */
     font-family: Arial, sans-serif;
 }
 
+
 /* Estilização da barra de navegação */
 .navbar {
-    background-color: #333;
+    background-color: rgba(38, 25, 25, 0.5); /* Ajuste o último valor para controlar a transparência */
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -36,7 +40,6 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ff4c4c; /* Destaque em vermelho */
     color: #ffffff;
 }
 
