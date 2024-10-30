@@ -1,16 +1,29 @@
 body {
-    background-color: #1a1a1a; /* Fundo preto*/
+    background-color: #1a1a1a; /* Fundo preto */
     color: #fefefe; /* Cor de texto branco */
     font-family: Arial, sans-serif;
 }
 
 /* Estilização da barra de navegação */
 .navbar {
-    background-color: #333; /* Fundo escuro */
+    background-color: #333;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
 }
+
+.logo {
+    width: 80px; /* Ajuste o tamanho desejado */
+    height: 80px;
+    border-radius: 50%; /* Forma circular */
+    object-fit: cover; /* Garante que a imagem se ajuste ao container circular */
+    margin-left: 20px;
+}
+
 
 .navbar a {
     display: inline-block;
@@ -67,7 +80,7 @@ body {
 
 .imagem-container.mostrar {
     opacity: 1;
-    max-height: 1000px;
+    max-height: 2000px;
 }
 
 /* Estilização do item */
@@ -97,4 +110,21 @@ body {
     font-weight: bold;
     font-size: 1.2em;
     margin: 8px 0;
+}
+
+/* Estilização do botão "Adicionar" */
+.add-button {
+    background-color: #ff4c4c; /* Cor de fundo vermelha */
+    color: #ffffff; /* Cor do texto branco */
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #cc3a3a; /* Vermelho escuro no hover */
 }
