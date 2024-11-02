@@ -1,10 +1,45 @@
 body {
-    background-image: url(fotos/wallpaper.jpg);
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a tela */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    color: #fefefe; /* Cor de texto branco */
+    position: relative;
     font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(fotos/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Ajuste a opacidade conforme desejado */
+    z-index: -1; /* Garante que o background fique atrás do conteúdo */
+}
+
+h2, p, .navbar a {
+    color: #000000; /* Cor branca para contraste */
+   /*text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para destacar o texto */
+    font-weight: bold;
+}
+
+/* Ajuste adicional para o título e os links da navbar */
+.navbar a {
+    color: #ffdf4c; /* Cor de destaque para links */
+    font-size: 1.1em; /* Aumenta o tamanho da fonte para maior visibilidade */
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Ajuste de preço para mais contraste */
+.price {
+    color: #ff4c4c; /* Vermelho brilhante para preços */
+   /*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);*/
+    font-size: 1.4em;
 }
 
 
@@ -90,7 +125,7 @@ body {
 .item {
     text-align: center;
     margin-bottom: 20px;
-    color: #fefefe;
+    color: #000000;
 }
 
 .item img {
@@ -109,7 +144,7 @@ body {
 
 /* Estilização do preço */
 .price {
-    color: #ff4c4c; /* Destaque em vermelho */
+    color: #ff0000; /* Destaque em vermelho */
     font-weight: bold;
     font-size: 1.2em;
     margin: 8px 0;
